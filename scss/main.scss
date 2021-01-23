@@ -14,14 +14,11 @@ body {
 }
 
 .navbar {
+  background-color: #10495C;
+  box-shadow: rgba(2, 28, 54, 0.2) 0px 5px 15px;
   li {
     margin: 0 10px;
     font-size: 20px;
-    color: white;
-  }
-
-  .active {
-    color: $secondaryColor;
   }
 }
 
@@ -51,6 +48,7 @@ body {
 
     &:hover {
       background-color: white;
+      transition: .5s ease-in-out;
     }
   }
   img {
@@ -130,7 +128,7 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 15px;
 
     &:hover {
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+      box-shadow: rgba(6, 45, 85, 0.2) 0px 8px 50px;
     }
 
     img {
