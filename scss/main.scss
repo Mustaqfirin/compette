@@ -1,0 +1,221 @@
+@import "scrollBar";
+
+$primaryColor: #0f1d37;
+$secondaryColor: #f2ad5f;
+
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #fafaff;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100vmax;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  li {
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .active {
+    color: $secondaryColor;
+  }
+}
+
+.hero {
+  text-align: center;
+  h1 {
+    margin-top: 2.5em;
+    color: white;
+    font-weight: 600;
+    font-size: 65px;
+    margin-bottom: 50px;
+    @media (max-width: 575.98px) {
+      margin-top: 1em;
+      font-size: 40px;
+    }
+  }
+  a {
+    background-color: $secondaryColor;
+    color: #986121;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+  img {
+    margin-top: 7em;
+    height: 450px;
+    @media (max-width: 575.98px) {
+      height: 200px;
+    }
+  }
+}
+
+.partner {
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    text-align: center;
+    img {
+      padding: 10px;
+    }
+  }
+}
+
+.reason {
+  .people {
+    img {
+      position: absolute;
+    }
+    #one {
+      z-index: 2;
+      top: 1100px;
+      left: 127px;
+    }
+    #two {
+      z-index: 1;
+      top: 1120px;
+      left: 330px;
+    }
+    #three {
+      z-index: 3;
+      top: 1300px;
+      left: 218px;
+    }
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $primaryColor;
+    margin-bottom: 35px;
+  }
+  img {
+    padding: 8px;
+  }
+  p,
+  a {
+    color: $primaryColor;
+    margin-left: 50px;
+    font-weight: 500;
+    padding: 8px;
+  }
+  a {
+    margin-left: 0;
+  }
+}
+
+.featured {
+  h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $primaryColor;
+    text-align: center;
+  }
+  .card {
+    background-color: white;
+    height: 382px;
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 15px;
+
+    &:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+    }
+
+    img {
+      margin: auto;
+      height: 55px;
+      width: 55px;
+    }
+
+    h4 {
+      color: $primaryColor;
+    }
+
+    p {
+      color: #CACAD2;
+    }
+
+    h4,
+    p {
+      text-align: center;
+      line-height: .8;
+    }
+
+    .salary {
+      color: #10495C;
+      font-size: 48px;
+      font-weight: 600;
+      margin: 30px 0;
+      span {
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+
+    .position {
+      color: #10495C;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .full-time {
+      color: #65d9e4;
+      background-color: #ebfafc;
+      padding: 10px;
+      width: 100px;
+      border-radius: 6px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  a {
+    text-align: center;
+    color: $primaryColor;
+    margin-top: 80px;
+    font-weight: 500;
+  }
+}
+
+.subscribe {
+  margin: 100px 0;
+  .subs-bg {
+    border-radius: 20px;
+    width: 750px;
+    height: 250px;
+    background-image: url(../images/bg-subs.png);
+    text-align: center;
+    box-shadow: rgba(18, 56, 94, 0.2) 0px 8px 50px;
+    h4 {
+      color: white;
+      font-size: 26px;
+      padding: 20px;
+      font-weight: 500;
+    }
+    p {
+      color: #b0c3c9;
+      font-size: 16px;
+    }
+    .btn {
+      color: #986121;
+      background-color: $secondaryColor;
+      outline: none;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  }
+}
